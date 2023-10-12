@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afff631e-1b5f-46dc-a30f-4dfda77fb2c4" name="Changes" comment="abcabc">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/models/customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models/customer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/orders.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/templates/send_mail.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/send_mail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/views/send_mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views/send_mail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views/cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views/checkout.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,25 +31,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "searchQuery": "https://github.com/hvmhieu2003/BTL_PYTHON.git",
-      "state": "OPEN"
+      &quot;searchQuery&quot;: &quot;https://github.com/hvmhieu2003/BTL_PYTHON.git&quot;,
+      &quot;state&quot;: &quot;OPEN&quot;
     },
     {
-      "assignee": "trungduck45"
+      &quot;assignee&quot;: &quot;trungduck45&quot;
     }
   ],
-  "lastFilter": {
-    "assignee": "trungduck45"
+  &quot;lastFilter&quot;: {
+    &quot;assignee&quot;: &quot;trungduck45&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="50d096f2-9a2c-42c1-b3eb-8735db97b095" />
-        <option name="url" value="https://github.com/trungduck45/ESHOP-MAIN.git" />
+        <option name="url" value="https://github.com/nq203/projectDjango.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -60,20 +66,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/quanc/OneDrive/Máy tính/projec_hiếu/venv",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/quanc/OneDrive/Máy tính/BookShop_duphong&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Eshop" />
@@ -157,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696437757953</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="abcabc">
+      <option name="closed" value="true" />
+      <created>1696437826940</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696437826940</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
