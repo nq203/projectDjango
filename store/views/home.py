@@ -52,8 +52,8 @@ def store(request):
     for category in categories:
         category.countProduct = Products.count_all_products_by_categoryid(category.id)
         category.save()
-    data = {}
     allProduct = Products.get_all_products().count()
+    data = {}
     data['products'] = products
     data['categories'] = categories
     data['allProduct'] = allProduct

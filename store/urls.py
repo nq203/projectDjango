@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from .views.home import Index , store
+from .views.search import Search
 from .views.signup import Signup
 from .views.login import Login , logout
 from .views.cart import Cart
@@ -19,4 +20,5 @@ urlpatterns = [
     path('check-out', CheckOut.as_view() , name='checkout'),
     path('orders', auth_middleware(OrderView.as_view()), name='orders'),
     path('send_mail',send_mail ,name  ='send_mail'),
+    path('search', Search.as_view(), name='search'),
 ]
