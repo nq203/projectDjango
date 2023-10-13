@@ -20,3 +20,11 @@ class Products(models.Model):
             return Products.objects.filter (category=category_id)
         else:
             return Products.get_all_products();
+
+    @staticmethod
+    def count_all_products_by_categoryid(category_id):
+        if category_id:
+            return Products.objects.filter(category=category_id).count()
+        else:
+            return Products.get_all_products().count();
+

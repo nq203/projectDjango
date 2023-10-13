@@ -2,7 +2,7 @@ from django.shortcuts import render , redirect , HttpResponseRedirect
 from store.models.product import Products
 from store.models.category import Category
 from django.views import View
-
+from django.db.models import Count
 
 # Create your views here.
 class Index(View):
@@ -49,11 +49,15 @@ def store(request):
         products = Products.get_all_products_by_categoryid(categoryID)
     else:
         products = Products.get_all_products();
-
+    for category in categories:
+        category.countProduct = Products.count_all_products_by_categoryid(category.id)
+        category.save()
     data = {}
+    allProduct = Products.get_all_products().count()
     data['products'] = products
     data['categories'] = categories
-
+    data['allProduct'] = allProduct
+    # request.session['products'] = products
     print('you are : ', request.session.get('email'))
     return render(request, 'index.html', data)
 
