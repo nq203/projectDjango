@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afff631e-1b5f-46dc-a30f-4dfda77fb2c4" name="Changes" comment="abcabc">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/models/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models/product.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/email.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/views/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views/home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/send_mail.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/send_mail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views/checkout.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/views/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views/search.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

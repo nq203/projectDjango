@@ -1,8 +1,42 @@
-Hello {{name}},<br>
-
-We’re happy to let you know that we’ve received your order.<br>
-
-Once your package ships, we will send you an email with a tracking number and link so you can see the movement of your package.<br>
-If you have any questions, contact us here or call us on 0936068537! We are here to help!<br>
-
-Returns: If you would like to return your product(s), please contact us.<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-color: black;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .message {
+            margin-top: 20px;
+        }
+        .contact {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Confirmation</h1>
+        <p>Hello {{ name }},</p>
+        <p>We are pleased to inform you that we have received your order.</p>
+        <p>Once your package is shipped, we will send a notification email with a tracking number and a link for you to track your package.</p>
+        <p>If you have any questions, please feel free to contact us here or call us at 0936068537! We are here to assist you at all times!</p>
+        <p>Returns: If you wish to return a product, please contact us.</p>
+        <div class="message">
+            <p>Thank you for shopping with our store!</p>
+        </div>
+        <div class="contact">
+            <p>Contact Information:</p>
+            <p>Email: letrungduc@gmail.com</p>
+            <p>Phone: 0936068537</p>
+        </div>
+    </div>
+</body>
+</html>

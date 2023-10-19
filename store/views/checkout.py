@@ -30,8 +30,9 @@ class CheckOut(View):
                           quantity=cart.get(str(product.id)))
             order.save()
         request.session['cart'] = {}
+
         # send_mail
-        email_subject = 'Xac Nhan Don Hang'
+        email_subject = 'Thanks you for purchasing from eCommerce !'
         customer = Customer.objects.get(id=customer)
         first_name = customer.first_name
         email_body = render_to_string('email.html',{'name' :first_name})

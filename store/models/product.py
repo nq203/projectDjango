@@ -27,4 +27,3 @@ class Products(models.Model):
             return Products.objects.filter(category=category_id).count()
         else:
             return Products.get_all_products().count();
-

@@ -16,6 +16,7 @@
 
     {% if result_products %}
         <h2>Search results for keywords"{{ query }}"</h2>
+        <div class="row mx-auto">
         {% for product in result_products %}
             <div class="card mx-auto mb-3" id="{{ product.id }}" style="width: 18rem;">
                 <img class="card-img-top" src="{{ product.image.url }}" alt="Card image cap">
@@ -50,6 +51,7 @@
                 </div>
             </div>
         {% endfor %}
+        </div>
     {% else %}
         <p>Not found"{{ query }}"</p>
     {% endif %}

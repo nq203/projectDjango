@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,37 +13,47 @@
   <title>E-commerce Website</title>
 
   <style>
-    nav{
+    nav {
       background-color: green;
     }
+
     .one-edge-shadow {
-              box-shadow: 0 8px 2px -5px rgb(246, 245, 245);
-}
-.display-8{
-  font-weight: 200;
-  font-size: 30px;
-  font-colour: $teal-200;
-}
+      box-shadow: 0 8px 2px -5px rgb(246, 245, 245);
+    }
+
+    .display-8 {
+      font-weight: 200;
+      font-size: 30px;
+      font-color: $teal-200;
+    }
   </style>
 </head>
 
-<body>
+<body style="display: flex; flex-direction: column; min-height: 100vh; position: relative;">
   <!-- navbar -->
+  <nav class="one-edge-shadow navbar navbar-light sticky-top navbar navbar-expand-lg text-white"
+    style="background-color: green;">
+    <a class="navbar-brand ms-3 text-dark" href="/">
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
 
-<nav class="one-edge-shadow
-  navbar navbar-light
-  sticky-top navbar 
-  navbar-expand-lg
-  text-white">
-    <a class="navbar-brand ms-3 text-dark " href="/">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-    <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png" style="width:50px;height:50px,color:text-light;">E-Commerce</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img
+        src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png"
+        style="width: 50px; height: 50px; color: text-light;">E-Commerce
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
@@ -55,26 +65,24 @@
         </li>
       </ul>
 
-
-
-      <ul class=" navbar-nav my-2 my-lg-0">
-
+      <ul class="navbar-nav my-2 my-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="/cart">Cart 
+          <a class="nav-link" href="/cart">Cart
             <span class="badge badge-success">{{request.session.cart.keys|length}}</span>
-            <span class="sr-only">(current)</span></a>
+            <span class="sr-only">(current)</span>
+          </a>
         </li>
 
         {% if request.session.customer %}
-        
-        <li class="nav-item active ">
+
+        <li class="nav-item active">
           <a class="nav-link" href="/orders">Orders<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active ">
+        <li class="nav-item active">
           <a class="nav-link" href="/logout">Logout<span class="sr-only">(current)</span></a>
         </li>
         {% else %}
-       
+
         <li class="nav-item active">
           <a class="nav-link" href="/signup">Signup<span class="sr-only">(current)</span></a>
         </li>
@@ -82,15 +90,42 @@
           <a class="nav-link" href="/login">Login<span class="sr-only">(current)</span></a>
         </li>
         {% endif %}
-
-
       </ul>
-
-
     </div>
   </nav>
   <!---->
-  {% block content %}{% endblock %}
+  <div style="flex: 1;">
+    {% block content %}{% endblock %}
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" style="background-color: green;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-xs-12 footer_menu">
+          <h3>Liên hệ</h3>
+          <ul>
+            <li class="footer_contact">
+              <i class="fa fa-phone"></i>
+              <p style="font-size: 14px; margin-bottom: 5px;">+0123456789</p>
+            </li>
+            <li class="footer_contact">
+              <i class="fa fa-envelope"></i>
+              <p style="font-size: 14px; margin-bottom: 5px;">letrungduc@gmail.com</p>
+            </li>
+            <li class="footer_contact">
+              <i class="fa fa-map-marker"></i>
+              <p style="font-size: 14px; margin-bottom: 5px;">Km10, Đường Nguyễn Trãi, Q.Hà Đông, Hà Nội</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xs-12 footer_news"
+          style="color: black; font-size: 12px; text-align: right;">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

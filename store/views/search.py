@@ -11,7 +11,6 @@ class Search(View):
             result_products = Products.objects.filter(name__icontains=query)
         else:
             result_products = Products.get_all_products()
-
         context = {
             'result_products': result_products,
             'query': query
